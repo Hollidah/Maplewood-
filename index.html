@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maplewood Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #47748d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a5743d;
+        }
+        .search-bar {
+            margin: 10px auto;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 30%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #597a91;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .property img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #5c7e9e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Maplewood Properties</h1>
+        <p>Where your property dreams come true.</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#map">Where to Find Us</a>
+    </nav>
+    <div class="search-bar">
+        <form action="#" method="get">
+            <input type="text" placeholder="Search for properties..." name="search">
+            <button type="submit">🔍</button>
+        </form>
+    </div>
+    <section id="home">
+        <h2>Why Choose Us</h2>
+        <p>Welcome to Maplewood Properties, where we redefine real estate by offering premium solutions tailored to meet your property needs. <br> Whether you're searching for your dream home, a prime commercial space, or a secure warehouse, <br> we are dedicated to connecting you with properties that match your lifestyle and business goals. <br>
+             Our commitment to excellence ensures that every transaction is seamless and every client and every client is satisfied.</p>
+    </section>
+    <section id="about">
+        <h2>Our Properties</h2>
+        <p>At Maplewood Properties, we specialize in a diverse range of nulla. properties designed to meet the unique needs of our clients:</p>
+        <ul>
+            <li>Residential Properties: Explore homes that combine comfort, style, and functionality in prime neighborhoods.</li>
+            <li>Commercial Properties: Discover spaces that elevate your business potential, strategically located for success.</li>
+            <li>Warehouses: Find secure, accessible, and spacious warehouses tailored to your storage and logistics needs.</li>
+        </ul>
+    </section>
+    <section id="properties">
+        <h2>Property Listings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Property Name</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                 
+                    <td><img src="Modern Apartment.jpeg" alt="Modern Apartment"></td>
+                    <td>Modern Apartment</td>
+                    <td>Ksh200,000</td>
+                    <td>Downtown</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="Cozy Suburban Home.jpeg" alt="Cozy Suburban Home"></td>
+                    <td>Cozy Suburban Home</td>
+                    <td>Ksh230,000</td>
+                    <td>Suburbs</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+                <tr>
+                    <td><img src="Spacious Warehouse.jpeg" alt="Spacious Warehouse"></td>
+                    <td>Spacious Warehouse</td>
+                    <td>Ksh200,000</td>
+                    <td>Industrial Zone</td>
+                    <td><a href="#">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="map">
+        <h2>Where to Find Us</h2>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15910.45783978033!2d36.817496!3d-1.287197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178c17493f2f379d%3A0x4a83fe397d587313!2sPost+Bank+House%2C+Nairobi%2C+Kenya!5e0!3m2!1sen!2sus!4v1634564960299!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+<footer>
+    <p>&copy; 2024 Maplewood Properties. All rights reserved.</p>
+</footer>
+</body>
+</html>
